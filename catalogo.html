@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo | BioMatrix</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="topbar">Envíos a toda Centroamérica &nbsp;·&nbsp; CoA incluido por lote &nbsp;·&nbsp; <a href="contacto.html">Solicitar muestra →</a></div>
+<header>
+  <div class="header-top">
+    <div class="logo"><a href="index.html" style="color:inherit;">Bio<span>Matrix</span></a></div>
+    <div class="search-wrap">
+      <select><option>Productos</option><option>CAS</option></select>
+      <input type="text" placeholder="Nombre de producto, número CAS..." value="ácido clorogénico">
+      <button class="search-btn"><i class="fa fa-magnifying-glass"></i></button>
+    </div>
+    <div class="header-actions">
+      <a href="#">SV</a><a href="#">ES</a>
+      <a href="contacto.html" class="btn-login">Iniciar sesión / Registro</a>
+    </div>
+    <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><i class="fa fa-bars"></i></button>
+  </div>
+  <nav class="header-nav">
+    <ul>
+      <li><a href="catalogo.html" class="active">Productos</a></li>
+      <li><a href="#">Aplicaciones</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Recursos</a></li>
+      <li><a href="#">Soporte</a></li>
+      <li class="nav-right"><a href="contacto.html">Iniciar sesión</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html"><i class="fa fa-house" style="width:18px;"></i> Inicio</a>
+    <a href="catalogo.html"><i class="fa fa-flask" style="width:18px;"></i> Productos</a>
+    <a href="contacto.html"><i class="fa fa-envelope" style="width:18px;"></i> Contacto</a>
+    <a href="contacto.html"><i class="fa fa-right-to-bracket" style="width:18px;"></i> Iniciar sesión</a>
+  </div>
+</header>
+<div class="breadcrumb-bar">
+  <div class="breadcrumb">
+    <a href="index.html">Inicio</a><i class="fa fa-chevron-right"></i>
+    <span>Productos</span><i class="fa fa-chevron-right"></i>
+    <span>Ácido Clorogénico</span>
+  </div>
+</div>
+
+<div class="catalog-layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Filtros</div>
+    <div class="applied-filters">
+      <span class="filter-tag">Ácido clorogénico <i class="fa fa-xmark"></i></span>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Categoría <i class="fa fa-chevron-down"></i></div>
+      <input class="search-filter" type="text" placeholder="Buscar categoría...">
+      <div class="filter-option"><input type="checkbox" id="ref" checked><label for="ref">Materiales de referencia</label><span class="filter-count">4</span></div>
+      <div class="filter-option"><input type="checkbox" id="bio"><label for="bio">Moléculas bioactivas</label><span class="filter-count">3</span></div>
+      <div class="filter-option"><input type="checkbox" id="std"><label for="std">Estándares analíticos</label><span class="filter-count">2</span></div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Pureza <i class="fa fa-chevron-down"></i></div>
+      <div class="filter-option"><input type="checkbox" id="p99"><label for="p99">≥99%</label><span class="filter-count">2</span></div>
+      <div class="filter-option"><input type="checkbox" id="p98" checked><label for="p98">≥98%</label><span class="filter-count">4</span></div>
+      <div class="filter-option"><input type="checkbox" id="p95"><label for="p95">≥95%</label><span class="filter-count">3</span></div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Forma física <i class="fa fa-chevron-down"></i></div>
+      <div class="filter-option"><input type="checkbox" id="powder" checked><label for="powder">Polvo</label><span class="filter-count">6</span></div>
+      <div class="filter-option"><input type="checkbox" id="sol"><label for="sol">Solución</label><span class="filter-count">2</span></div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Aplicación <i class="fa fa-chevron-down"></i></div>
+      <div class="filter-option"><input type="checkbox" id="hplc" checked><label for="hplc">HPLC</label><span class="filter-count">7</span></div>
+      <div class="filter-option"><input type="checkbox" id="pharma"><label for="pharma">Farmacéutica</label><span class="filter-count">5</span></div>
+      <div class="filter-option"><input type="checkbox" id="food"><label for="food">Alimentos</label><span class="filter-count">4</span></div>
+      <div class="filter-option"><input type="checkbox" id="cosm"><label for="cosm">Cosmética</label><span class="filter-count">3</span></div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Disponibilidad <i class="fa fa-chevron-down"></i></div>
+      <div class="filter-option"><input type="checkbox" id="stock" checked><label for="stock">En stock</label><span class="filter-count">6</span></div>
+      <div class="filter-option"><input type="checkbox" id="order"><label for="order">Por pedido</label><span class="filter-count">2</span></div>
+    </div>
+  </aside>
+
+  <main class="catalog-main">
+    <div class="catalog-header">
+      <div class="catalog-count">Mostrando <strong>1–7 de 7 resultados</strong> para "ácido clorogénico"</div>
+      <div class="catalog-sort">
+        Ordenar por:
+        <select><option>Relevancia</option><option>Nombre A–Z</option><option>Pureza</option></select>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div class="product-row">
+        <div class="pr-img"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="22" stroke="#2563eb" stroke-width="1.2"/><line x1="40" y1="18" x2="40" y2="6" stroke="#2563eb" stroke-width="1.2"/><line x1="40" y1="62" x2="40" y2="74" stroke="#2563eb" stroke-width="1.2"/><line x1="21" y1="29" x2="10" y2="23" stroke="#2563eb" stroke-width="1.2"/><line x1="59" y1="29" x2="70" y2="23" stroke="#2563eb" stroke-width="1.2"/></svg></div>
+        <div>
+          <div class="pr-ref">BM-4892</div>
+          <div class="pr-name"><a href="producto.html">Ácido Clorogénico</a></div>
+          <div class="pr-synonym">≥98% (HPLC) · Polvo</div>
+          <div class="pr-tags">
+            <span class="pr-tag">CAS 327-97-9</span>
+            <span class="pr-tag">C₁₆H₁₈O₉</span>
+            <span class="pr-tag green">≥98% HPLC</span>
+            <span class="pr-tag">PM 354.31</span>
+          </div>
+        </div>
+        <div class="pr-right">
+          <div class="pr-cas">CAS: 327-97-9</div>
+          <div class="pr-stock in"><i class="fa fa-circle"></i> En stock</div>
+          <a href="producto.html" class="btn-primary" style="font-size:12px;padding:8px 14px;">Ver precios <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="pr-img"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="22" stroke="#2563eb" stroke-width="1.2"/><line x1="40" y1="18" x2="40" y2="6" stroke="#2563eb" stroke-width="1.2"/><line x1="59" y1="29" x2="70" y2="23" stroke="#2563eb" stroke-width="1.2"/><line x1="59" y1="51" x2="70" y2="57" stroke="#2563eb" stroke-width="1.2"/></svg></div>
+        <div>
+          <div class="pr-ref">PHR2202 · Estándar farmacéutico</div>
+          <div class="pr-name"><a href="producto.html">Ácido Clorogénico</a></div>
+          <div class="pr-synonym">Material de referencia secundario farmacéutico certificado</div>
+          <div class="pr-tags">
+            <span class="pr-tag">CAS 327-97-9</span>
+            <span class="pr-tag green">Ref. farmacéutica</span>
+            <span class="pr-tag blue">CoA incluido</span>
+          </div>
+        </div>
+        <div class="pr-right">
+          <div class="pr-cas">CAS: 327-97-9</div>
+          <div class="pr-stock in"><i class="fa fa-circle"></i> En stock</div>
+          <a href="producto.html" class="btn-primary" style="font-size:12px;padding:8px 14px;">Ver precios <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="pr-img"><svg viewBox="0 0 80 80" fill="none"><rect x="22" y="22" width="36" height="36" stroke="#2563eb" stroke-width="1.2" rx="3"/><line x1="40" y1="22" x2="40" y2="8" stroke="#2563eb" stroke-width="1.2"/><line x1="58" y1="40" x2="72" y2="40" stroke="#2563eb" stroke-width="1.2"/></svg></div>
+        <div>
+          <div class="pr-ref">PHL89175 · Grado HPLC</div>
+          <div class="pr-name"><a href="producto.html">Ácido Clorogénico</a></div>
+          <div class="pr-synonym">≥95% (titración) · Grado analítico</div>
+          <div class="pr-tags">
+            <span class="pr-tag">CAS 327-97-9</span>
+            <span class="pr-tag blue">HPLC</span>
+            <span class="pr-tag green">≥95%</span>
+          </div>
+        </div>
+        <div class="pr-right">
+          <div class="pr-cas">CAS: 327-97-9</div>
+          <div class="pr-stock in"><i class="fa fa-circle"></i> En stock</div>
+          <a href="producto.html" class="btn-primary" style="font-size:12px;padding:8px 14px;">Ver precios <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="pr-img"><svg viewBox="0 0 80 80" fill="none"><polygon points="40,14 66,28 66,52 40,66 14,52 14,28" stroke="#2563eb" stroke-width="1.2" fill="none"/><line x1="40" y1="14" x2="40" y2="4" stroke="#2563eb" stroke-width="1.2"/></svg></div>
+        <div>
+          <div class="pr-ref">Y0000569 · Farmacopea Europea</div>
+          <div class="pr-name"><a href="producto.html">Ácido Clorogénico EP</a></div>
+          <div class="pr-synonym">Estándar de Farmacopea Europea</div>
+          <div class="pr-tags">
+            <span class="pr-tag">CAS 327-97-9</span>
+            <span class="pr-tag blue">Ph. Eur.</span>
+            <span class="pr-tag green">CoA incluido</span>
+          </div>
+        </div>
+        <div class="pr-right">
+          <div class="pr-cas">CAS: 327-97-9</div>
+          <div class="pr-stock in"><i class="fa fa-circle"></i> En stock</div>
+          <a href="producto.html" class="btn-primary" style="font-size:12px;padding:8px 14px;">Ver precios <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="pr-img"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="16" stroke="#2563eb" stroke-width="1.2"/><circle cx="40" cy="40" r="28" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="40" y1="12" x2="40" y2="4" stroke="#2563eb" stroke-width="1.2"/></svg></div>
+        <div>
+          <div class="pr-ref">SMB00157 · Bioactive</div>
+          <div class="pr-name"><a href="producto.html">Ácido Clorogénico ≥99%</a></div>
+          <div class="pr-synonym">≥99% (HPLC) · Pureza para investigación</div>
+          <div class="pr-tags">
+            <span class="pr-tag">CAS 327-97-9</span>
+            <span class="pr-tag green">≥99% HPLC</span>
+            <span class="pr-tag">Investigación</span>
+          </div>
+        </div>
+        <div class="pr-right">
+          <div class="pr-cas">CAS: 327-97-9</div>
+          <div class="pr-stock in"><i class="fa fa-circle"></i> En stock</div>
+          <a href="producto.html" class="btn-primary" style="font-size:12px;padding:8px 14px;">Ver precios <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px; padding-top:28px; border-top:1px solid var(--border);">
+      <div class="section-label" style="margin-bottom:14px;">Productos recomendados</div>
+      <div class="recs-grid">
+        <div class="rec-card"><div class="rec-img"><svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="16" stroke="#2563eb" stroke-width="1.2"/><line x1="30" y1="14" x2="30" y2="4" stroke="#2563eb" stroke-width="1.2"/></svg></div><div class="rec-body"><div class="rec-brand">BioMatrix</div><div class="rec-ref">BM-0440</div><div class="rec-name">Ácido Cafeico</div><button class="rec-btn">Vista rápida</button></div></div>
+        <div class="rec-card"><div class="rec-img"><svg viewBox="0 0 60 60" fill="none"><rect x="16" y="16" width="28" height="28" stroke="#2563eb" stroke-width="1.2" rx="2"/><line x1="30" y1="16" x2="30" y2="6" stroke="#2563eb" stroke-width="1.2"/></svg></div><div class="rec-body"><div class="rec-brand">BioMatrix</div><div class="rec-ref">BM-3341</div><div class="rec-name">Ácido Quínico</div><button class="rec-btn">Vista rápida</button></div></div>
+        <div class="rec-card"><div class="rec-img"><svg viewBox="0 0 60 60" fill="none"><polygon points="30,8 52,20 52,40 30,52 8,40 8,20" stroke="#2563eb" stroke-width="1.2" fill="none"/></svg></div><div class="rec-body"><div class="rec-brand">BioMatrix</div><div class="rec-ref">BM-5510</div><div class="rec-name">Luteolina</div><button class="rec-btn">Vista rápida</button></div></div>
+        <div class="rec-card"><div class="rec-img"><svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="10" stroke="#2563eb" stroke-width="1.2"/><circle cx="30" cy="30" r="20" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="3 2"/></svg></div><div class="rec-body"><div class="rec-brand">BioMatrix</div><div class="rec-ref">BM-1180</div><div class="rec-name">Naringenina</div><button class="rec-btn">Vista rápida</button></div></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-logo">Bio<span>Matrix</span></div><p class="footer-about">Compuestos biotecnológicos de alta pureza para investigación y academia en Centroamérica.</p></div>
+    <div class="footer-col"><h4>Productos</h4><ul><li><a href="#">Polifenoles</a></li><li><a href="#">Flavonoides</a></li><li><a href="#">Ácidos fenólicos</a></li><li><a href="#">Ver todo</a></li></ul></div>
+    <div class="footer-col"><h4>Compañía</h4><ul><li><a href="#">Sobre nosotros</a></li><li><a href="#">Certificaciones</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    <div class="footer-col"><h4>Soporte</h4><ul><li><a href="#">Cómo ordenar</a></li><li><a href="#">Envíos</a></li><li><a href="#">FAQ</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 BioMatrix. Todos los derechos reservados.</span>
+    <span>Para uso en investigación. No apto para consumo humano sin prescripción.</span>
+  </div>
+</footer>
+</body>
+</html>

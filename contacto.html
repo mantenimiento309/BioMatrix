@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | BioMatrix</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="topbar">Envíos a toda Centroamérica &nbsp;·&nbsp; CoA incluido por lote &nbsp;·&nbsp; <a href="contacto.html">Solicitar muestra →</a></div>
+<header>
+  <div class="header-top">
+    <div class="logo"><a href="index.html" style="color:inherit;">Bio<span>Matrix</span></a></div>
+    <div class="search-wrap">
+      <select><option>Productos</option><option>CAS</option></select>
+      <input type="text" placeholder="Nombre de producto, número CAS...">
+      <button class="search-btn"><i class="fa fa-magnifying-glass"></i></button>
+    </div>
+    <div class="header-actions">
+      <a href="#">SV</a><a href="#">ES</a>
+      <a href="contacto.html" class="btn-login">Iniciar sesión / Registro</a>
+    </div>
+    <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><i class="fa fa-bars"></i></button>
+  </div>
+  <nav class="header-nav">
+    <ul>
+      <li><a href="catalogo.html">Productos</a></li>
+      <li><a href="#">Aplicaciones</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Recursos</a></li>
+      <li><a href="#">Soporte</a></li>
+      <li class="nav-right"><a href="contacto.html">Iniciar sesión</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html"><i class="fa fa-house" style="width:18px;"></i> Inicio</a>
+    <a href="catalogo.html"><i class="fa fa-flask" style="width:18px;"></i> Productos</a>
+    <a href="contacto.html"><i class="fa fa-envelope" style="width:18px;"></i> Contacto</a>
+    <a href="contacto.html"><i class="fa fa-right-to-bracket" style="width:18px;"></i> Iniciar sesión</a>
+  </div>
+</header>
+<div class="breadcrumb-bar">
+  <div class="breadcrumb">
+    <a href="index.html">Inicio</a><i class="fa fa-chevron-right"></i>
+    <span>Contacto</span>
+  </div>
+</div>
+
+<div class="contact-layout">
+  <div>
+    <h1 class="contact-title">Solicite una cotización<br>o <span>muestra</span></h1>
+    <p class="contact-sub">Complete el formulario y un especialista le responderá en menos de 24 horas hábiles.</p>
+    <form>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre completo *</label>
+          <input type="text" placeholder="Dr. Ana García">
+        </div>
+        <div class="form-group">
+          <label>Institución / Empresa *</label>
+          <input type="text" placeholder="Universidad de El Salvador">
+        </div>
+        <div class="form-group">
+          <label>Correo electrónico *</label>
+          <input type="email" placeholder="investigacion@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label>Teléfono</label>
+          <input type="tel" placeholder="+503 7000-0000">
+        </div>
+        <div class="form-group">
+          <label>País</label>
+          <select>
+            <option>El Salvador</option>
+            <option>Guatemala</option>
+            <option>Honduras</option>
+            <option>Nicaragua</option>
+            <option>Costa Rica</option>
+            <option>Panamá</option>
+            <option>México</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tipo de solicitud</label>
+          <select>
+            <option>Cotización de producto</option>
+            <option>Solicitar muestra</option>
+            <option>Información técnica</option>
+            <option>Soporte post-venta</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Compuesto(s) de interés *</label>
+          <input type="text" placeholder="Ej: Ácido Clorogénico 500mg, Quercetina 250mg, CAS 327-97-9...">
+        </div>
+        <div class="form-group full">
+          <label>Descripción del proyecto o uso previsto</label>
+          <textarea rows="5" placeholder="Breve descripción del proyecto de investigación, aplicación prevista o requerimientos especiales..."></textarea>
+        </div>
+        <div class="form-group full">
+          <label>Documentación adicional requerida</label>
+          <div class="check-row">
+            <label class="check-label"><input type="checkbox"> Certificado de Análisis (CoA)</label>
+            <label class="check-label"><input type="checkbox"> Hoja de Seguridad (SDS/MSDS)</label>
+            <label class="check-label"><input type="checkbox"> Certificado de Origen (COO)</label>
+            <label class="check-label"><input type="checkbox"> Factura proforma para importación</label>
+            <label class="check-label"><input type="checkbox"> Ficha técnica detallada</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-primary"><i class="fa fa-paper-plane"></i> Enviar solicitud</button>
+        <p class="form-note">* Campos obligatorios. Sus datos no se comparten con terceros.</p>
+      </div>
+    </form>
+  </div>
+
+  <div class="contact-aside">
+    <div class="ca-block">
+      <div class="ca-block-head"><i class="fa fa-address-card"></i> Información de contacto</div>
+      <div class="ca-block-body">
+        <div>
+          <div class="ca-item-label">Correo ventas</div>
+          <div class="ca-item-val">ventas@biomatrix.com</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Soporte técnico</div>
+          <div class="ca-item-val">soporte@biomatrix.com</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Teléfono</div>
+          <div class="ca-item-val">+503 2200-0000</div>
+        </div>
+        <div>
+          <div class="ca-item-label">WhatsApp</div>
+          <div class="ca-item-val">+503 7000-0000</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Horario</div>
+          <div class="ca-item-val">Lun–Vie · 8:00–17:00 CST</div>
+        </div>
+      </div>
+    </div>
+    <div class="ca-block">
+      <div class="ca-block-head"><i class="fa fa-clock"></i> Tiempos de respuesta</div>
+      <div class="ca-block-body">
+        <div>
+          <div class="ca-item-label">Cotizaciones</div>
+          <div class="ca-item-val">Menos de 24 horas hábiles</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Muestras</div>
+          <div class="ca-item-val">3–5 días hábiles</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Soporte técnico</div>
+          <div class="ca-item-val">Mismo día hábil</div>
+        </div>
+      </div>
+    </div>
+    <div class="ca-block">
+      <div class="ca-block-head"><i class="fa fa-truck"></i> Envíos</div>
+      <div class="ca-block-body">
+        <div>
+          <div class="ca-item-label">El Salvador</div>
+          <div class="ca-item-val">2–3 días hábiles</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Centroamérica</div>
+          <div class="ca-item-val">5–7 días hábiles</div>
+        </div>
+        <div>
+          <div class="ca-item-label">Internacional</div>
+          <div class="ca-item-val">10–15 días hábiles</div>
+        </div>
+      </div>
+    </div>
+    <div class="ca-block">
+      <div class="ca-block-head"><i class="fa fa-medal"></i> Certificaciones</div>
+      <div class="ca-block-body">
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <i class="fa fa-medal" style="color:var(--accent);width:18px;"></i>
+            <span style="font-size:13px;color:var(--ink2);">ISO 9001:2015</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <i class="fa fa-file-lines" style="color:var(--accent);width:18px;"></i>
+            <span style="font-size:13px;color:var(--ink2);">CoA por lote verificable</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <i class="fa fa-triangle-exclamation" style="color:var(--accent);width:18px;"></i>
+            <span style="font-size:13px;color:var(--ink2);">SDS bajo normativa GHS</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <i class="fa fa-microscope" style="color:var(--accent);width:18px;"></i>
+            <span style="font-size:13px;color:var(--ink2);">Trazabilidad completa por lote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-logo">Bio<span>Matrix</span></div><p class="footer-about">Compuestos biotecnológicos de alta pureza para investigación y academia en Centroamérica.</p></div>
+    <div class="footer-col"><h4>Productos</h4><ul><li><a href="catalogo.html">Polifenoles</a></li><li><a href="catalogo.html">Flavonoides</a></li><li><a href="catalogo.html">Ver todo</a></li></ul></div>
+    <div class="footer-col"><h4>Compañía</h4><ul><li><a href="#">Sobre nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    <div class="footer-col"><h4>Soporte</h4><ul><li><a href="#">Cómo ordenar</a></li><li><a href="#">Envíos</a></li><li><a href="#">FAQ</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 BioMatrix. Todos los derechos reservados.</span>
+    <span>Para uso en investigación. No apto para consumo humano sin prescripción.</span>
+  </div>
+</footer>
+</body>
+</html>
